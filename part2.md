@@ -1,0 +1,11 @@
+# Technical exercise for Data Scientist position
+
+## Part 2
+
+The World Bank colleague, asking how long World Bank retirees live, has collected interesting data and with this analysis sheds some light on this question. However, the claims made regarding the comparison of the longevity of populations need to be viewed critically.
+
+First off, the author points out that this distribution is wide and indeed the distribution has a larger spread than a standard normal distribution. One could further add that the distribution has a negative skew, as quite common in age-at-death distributions.
+
+Based on the collected data the author calculates the mean age at death of World Bank retirees to be 81. In a further step, the author compares this value to the average live expectancy of US citizens who are 65 years old today, 84.4 for men, and 86.6 for women respectively. For a sample size of 919 observations and an approximated distribution similar to the one displayed in the email, this difference between the calculated mean age at death of World Bank retirees and US citizens is statistically significant for both males and females.
+
+However, the two populations being compared in this assessment are fundamentally different and cannot be used to conclude that World Bank retirees have a lower age at death than the general US population: On the one hand, the data collected on deceased World Bank retirees, the population of interest, reflects deaths over the last 6 years. The data used for comparison reflects the life expectancy of US citizens that are 65 today. As the remaining life expectancy at age 65 is higher for people today than for the vast majority of subjects in the population of interest - they were simply born earlier than the US citizens that are 65 today - the difference in the compared values is likely due to this temporal dependence. For example, a Word Bank retiree who died at age 81 six years ago was 65 years old in 1998. The life expectancy for people aged 65 in 1998 was simply lower than of 65-year-olds today. To make a valid comparison one would need to compare the average age-at-death for two populations over the same period.
